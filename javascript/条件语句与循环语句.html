@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //条件语句 if...else
+        var a = 5;
+        if(a > 5){
+            document.write("a大于5");
+        }else if(a < 5){
+            document.write("a小于5");
+        }else{
+            document.write("a等于5");
+        }
+
+        document.write("</br>----------------------------</br>");
+
+        //条件语句 switch
+        var b = 4;
+        switch(b){
+            case 2:
+                document.write("2")
+                break;
+            case 4:
+                document.write("4")
+                break;
+            default:
+                document.write("无法查询")
+                break
+        }
+
+        document.write("</br>----------------------------</br>");
+
+        //循环语句 for/in
+        var c = [1,2,3,4,5];
+        var d = 2;
+        for(;d < 4;d++){
+            document.write(c[d]+"</br>");
+        }
+
+        var e = [6,7,8,9,10];
+        var f;
+        for(f in e){
+            document.write(e[f]);
+        }
+
+        document.write("</br>----------------------------</br>");
+
+        //循环语句 do...while
+        var g = 20;
+        while(g > 10){                      //先判断再循环
+            document.write("g="+g+"</br>");
+            g--;
+        }
+
+        var h = 18;
+        do{                                 //先循环再判断
+            document.write("h="+h+",");
+            h--;
+        }while(h > 12){
+
+        }
+    </script>
+</body>
+</html>
